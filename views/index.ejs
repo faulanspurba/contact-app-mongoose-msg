@@ -1,0 +1,14 @@
+<h4>Daftar Contact</h4>
+
+<% if (contacts <= 0) { %>
+<p>Data contact masih kosong</p>
+<% }; %>
+
+<ul>
+  <% contacts.forEach(contact => { %>
+  <li>Nama : <%= contact.name %></li>
+  <li>NIM : <%= contact.nim %></li>
+  <li>Email: <%= contact.email %></li>
+  <br />
+  <% }); %>
+</ul>
